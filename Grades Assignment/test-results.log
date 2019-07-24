@@ -1,0 +1,603 @@
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\Mubariz a04, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 23 items
+
+test_student.py .......................
+
+========================== 23 passed in 0.12 seconds ==========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\Mubariz a04, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+E:\Anaconda\DICK\lib\site-packages\_pytest\python.py:418: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+E:\Anaconda\DICK\lib\site-packages\py\_path\local.py:662: in pyimport
+    __import__(modname)
+E:\Anaconda\DICK\lib\site-packages\_pytest\assertion\rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a04 import get_grade, calculate_sgpa
+E     File "C:\Users\Mubariz Khan\Downloads\Mubariz a04\a04.py", line 10
+E       if obt_marks >= 86:
+E                         ^
+E   IndentationError: unindent does not match any outer indentation level
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.42 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\Mubariz a04, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+E:\Anaconda\DICK\lib\site-packages\_pytest\python.py:418: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+E:\Anaconda\DICK\lib\site-packages\py\_path\local.py:662: in pyimport
+    __import__(modname)
+E:\Anaconda\DICK\lib\site-packages\_pytest\assertion\rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a04 import get_grade, calculate_sgpa
+E     File "C:\Users\Mubariz Khan\Downloads\Mubariz a04\a04.py", line 75
+E       if __name__ == '__main__':
+E        ^
+E   IndentationError: expected an indented block
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.19 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\Mubariz a04, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 23 items
+
+test_student.py ...................FFFF
+
+================================== FAILURES ===================================
+_______________________________ test_sgpa_int_1 _______________________________
+
+    def test_sgpa_int_1():
+>       assert abs(calculate_sgpa('A', 'A', 'C') - 3.3333) < epsilon
+E       NameError: global name 'calculate_sgpa' is not defined
+
+test_student.py:108: NameError
+_______________________________ test_sgpa_int_2 _______________________________
+
+    def test_sgpa_int_2():
+>       assert abs(calculate_sgpa('F', 'F', 'F') - 0) < epsilon
+E       NameError: global name 'calculate_sgpa' is not defined
+
+test_student.py:112: NameError
+_______________________________ test_sgpa_int_3 _______________________________
+
+    def test_sgpa_int_3():
+>       assert abs(calculate_sgpa('A', 'C', 'F') - 2.0) < epsilon
+E       NameError: global name 'calculate_sgpa' is not defined
+
+test_student.py:116: NameError
+_______________________________ test_sgpa_int_4 _______________________________
+
+    def test_sgpa_int_4():
+>       assert abs(calculate_sgpa('F', 'F', 'nothing') - 0) < epsilon
+E       NameError: global name 'calculate_sgpa' is not defined
+
+test_student.py:120: NameError
+===================== 4 failed, 19 passed in 0.19 seconds =====================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\Mubariz a04, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+E:\Anaconda\DICK\lib\site-packages\_pytest\python.py:418: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+E:\Anaconda\DICK\lib\site-packages\py\_path\local.py:662: in pyimport
+    __import__(modname)
+E:\Anaconda\DICK\lib\site-packages\_pytest\assertion\rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a04 import get_grade, calculate_sgpa
+E     File "C:\Users\Mubariz Khan\Downloads\Mubariz a04\a04.py", line 68
+E       if x == 'C'
+E                 ^
+E   SyntaxError: invalid syntax
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.19 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\Mubariz a04, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+E:\Anaconda\DICK\lib\site-packages\_pytest\python.py:418: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+E:\Anaconda\DICK\lib\site-packages\py\_path\local.py:662: in pyimport
+    __import__(modname)
+E:\Anaconda\DICK\lib\site-packages\_pytest\assertion\rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a04 import get_grade, calculate_sgpa
+E     File "C:\Users\Mubariz Khan\Downloads\Mubariz a04\a04.py", line 68
+E       if x == 'C'
+E                 ^
+E   SyntaxError: invalid syntax
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.19 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\Mubariz a04, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 23 items
+
+test_student.py ...................FFFF
+
+================================== FAILURES ===================================
+_______________________________ test_sgpa_int_1 _______________________________
+
+    def test_sgpa_int_1():
+>       assert abs(calculate_sgpa('A', 'A', 'C') - 3.3333) < epsilon
+E       NameError: global name 'calculate_sgpa' is not defined
+
+test_student.py:108: NameError
+_______________________________ test_sgpa_int_2 _______________________________
+
+    def test_sgpa_int_2():
+>       assert abs(calculate_sgpa('F', 'F', 'F') - 0) < epsilon
+E       NameError: global name 'calculate_sgpa' is not defined
+
+test_student.py:112: NameError
+_______________________________ test_sgpa_int_3 _______________________________
+
+    def test_sgpa_int_3():
+>       assert abs(calculate_sgpa('A', 'C', 'F') - 2.0) < epsilon
+E       NameError: global name 'calculate_sgpa' is not defined
+
+test_student.py:116: NameError
+_______________________________ test_sgpa_int_4 _______________________________
+
+    def test_sgpa_int_4():
+>       assert abs(calculate_sgpa('F', 'F', 'nothing') - 0) < epsilon
+E       NameError: global name 'calculate_sgpa' is not defined
+
+test_student.py:120: NameError
+===================== 4 failed, 19 passed in 0.14 seconds =====================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\Mubariz a04, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 23 items
+
+test_student.py ...................FFFF
+
+================================== FAILURES ===================================
+_______________________________ test_sgpa_int_1 _______________________________
+
+    def test_sgpa_int_1():
+>       assert abs(calculate_sgpa('A', 'A', 'C') - 3.3333) < epsilon
+E       NameError: global name 'calculate_sgpa' is not defined
+
+test_student.py:108: NameError
+_______________________________ test_sgpa_int_2 _______________________________
+
+    def test_sgpa_int_2():
+>       assert abs(calculate_sgpa('F', 'F', 'F') - 0) < epsilon
+E       NameError: global name 'calculate_sgpa' is not defined
+
+test_student.py:112: NameError
+_______________________________ test_sgpa_int_3 _______________________________
+
+    def test_sgpa_int_3():
+>       assert abs(calculate_sgpa('A', 'C', 'F') - 2.0) < epsilon
+E       NameError: global name 'calculate_sgpa' is not defined
+
+test_student.py:116: NameError
+_______________________________ test_sgpa_int_4 _______________________________
+
+    def test_sgpa_int_4():
+>       assert abs(calculate_sgpa('F', 'F', 'nothing') - 0) < epsilon
+E       NameError: global name 'calculate_sgpa' is not defined
+
+test_student.py:120: NameError
+===================== 4 failed, 19 passed in 0.12 seconds =====================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\Mubariz a04, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 23 items
+
+test_student.py ...................FFFF
+
+================================== FAILURES ===================================
+_______________________________ test_sgpa_int_1 _______________________________
+
+    def test_sgpa_int_1():
+>       assert abs(calculate_sgpa('A', 'A', 'C') - 3.3333) < epsilon
+E       NameError: global name 'calculate_sgpa' is not defined
+
+test_student.py:108: NameError
+_______________________________ test_sgpa_int_2 _______________________________
+
+    def test_sgpa_int_2():
+>       assert abs(calculate_sgpa('F', 'F', 'F') - 0) < epsilon
+E       NameError: global name 'calculate_sgpa' is not defined
+
+test_student.py:112: NameError
+_______________________________ test_sgpa_int_3 _______________________________
+
+    def test_sgpa_int_3():
+>       assert abs(calculate_sgpa('A', 'C', 'F') - 2.0) < epsilon
+E       NameError: global name 'calculate_sgpa' is not defined
+
+test_student.py:116: NameError
+_______________________________ test_sgpa_int_4 _______________________________
+
+    def test_sgpa_int_4():
+>       assert abs(calculate_sgpa('F', 'F', 'nothing') - 0) < epsilon
+E       NameError: global name 'calculate_sgpa' is not defined
+
+test_student.py:120: NameError
+===================== 4 failed, 19 passed in 0.20 seconds =====================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\Mubariz a04, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 23 items
+
+test_student.py .......................
+
+========================== 23 passed in 0.08 seconds ==========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\Mubariz a04, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 23 items
+
+test_student.py .......................
+
+========================== 23 passed in 0.07 seconds ==========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\Mubariz a04, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 23 items
+
+test_student.py .......................
+
+========================== 23 passed in 0.08 seconds ==========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\Mubariz a04, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 23 items
+
+test_student.py FFFFFFFFFFFFFFFFFFF....
+
+================================== FAILURES ===================================
+______________________________ test_grade_int_1 _______________________________
+
+    def test_grade_int_1():
+        score = 90
+>       assert get_grade(score) == 'A+'
+
+test_student.py:10: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 90
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+______________________________ test_grade_int_2 _______________________________
+
+    def test_grade_int_2():
+        score = 86
+>       assert get_grade(score) == 'A'
+
+test_student.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 86
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+______________________________ test_grade_int_3 _______________________________
+
+    def test_grade_int_3():
+        score = 89
+>       assert get_grade(score) == 'A'
+
+test_student.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 89
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+______________________________ test_grade_int_4a ______________________________
+
+    def test_grade_int_4a():
+        score = 85
+>       assert get_grade(score) == 'A-'
+
+test_student.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 85
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+______________________________ test_grade_int_4b ______________________________
+
+    def test_grade_int_4b():
+        score = 82
+>       assert get_grade(score) == 'A-'
+
+test_student.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 82
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+______________________________ test_grade_int_5a ______________________________
+
+    def test_grade_int_5a():
+        score = 81
+>       assert get_grade(score) == 'B+'
+
+test_student.py:32: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 81
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+______________________________ test_grade_int_5b ______________________________
+
+    def test_grade_int_5b():
+        score = 78
+>       assert get_grade(score) == 'B+'
+
+test_student.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 78
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+______________________________ test_grade_int_6a ______________________________
+
+    def test_grade_int_6a():
+        score = 77
+>       assert get_grade(score) == 'B'
+
+test_student.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 77
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+______________________________ test_grade_int_6b ______________________________
+
+    def test_grade_int_6b():
+        score = 74
+>       assert get_grade(score) == 'B'
+
+test_student.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 74
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+______________________________ test_grade_int_7a ______________________________
+
+    def test_grade_int_7a():
+        score = 73
+>       assert get_grade(score) == 'B-'
+
+test_student.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 73
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+______________________________ test_grade_int_7b ______________________________
+
+    def test_grade_int_7b():
+        score = 70
+>       assert get_grade(score) == 'B-'
+
+test_student.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 70
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+______________________________ test_grade_int_8a ______________________________
+
+    def test_grade_int_8a():
+        score = 69
+>       assert get_grade(score) == 'C+'
+
+test_student.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 69
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+______________________________ test_grade_int_8b ______________________________
+
+    def test_grade_int_8b():
+        score = 66
+>       assert get_grade(score) == 'C+'
+
+test_student.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 66
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+______________________________ test_grade_int_9a ______________________________
+
+    def test_grade_int_9a():
+        score = 65
+>       assert get_grade(score) == 'C'
+
+test_student.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 65
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+______________________________ test_grade_int_9b ______________________________
+
+    def test_grade_int_9b():
+        score = 62
+>       assert get_grade(score) == 'C'
+
+test_student.py:71: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 62
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+_____________________________ test_grade_int_10b ______________________________
+
+    def test_grade_int_10b():
+        score = 58
+>       assert get_grade(score) == 'C-'
+
+test_student.py:80: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 58
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+_____________________________ test_grade_int_12a ______________________________
+
+    def test_grade_int_12a():
+        score = 53
+>       assert get_grade(score) == 'D'
+
+test_student.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 53
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+_____________________________ test_grade_int_12b ______________________________
+
+    def test_grade_int_12b():
+        score = 50
+>       assert get_grade(score) == 'D'
+
+test_student.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 50
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+_____________________________ test_grade_int_13a ______________________________
+
+    def test_grade_int_13a():
+        score = 49
+>       assert get_grade(score) == 'F'
+
+test_student.py:100: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+obt_marks = 49
+
+    def get_grade(obt_marks):
+>       num = int(round(marks))
+E       NameError: global name 'marks' is not defined
+
+a04.py:7: NameError
+===================== 19 failed, 4 passed in 1.39 seconds =====================
