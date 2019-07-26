@@ -1,0 +1,1328 @@
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\assignment56 (1), inifile:
+plugins: timeout-1.2.0
+timeout: 100.0s method: thread
+collected 5 items
+
+test_student.py .FFFF
+
+================================== FAILURES ===================================
+________________________________ test_add_s_0 _________________________________
+
+    def test_add_s_0():
+        args = ['128', '985']
+        ground = ['1113']
+>       check_cmd_output(ground, args)
+
+test_student.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['1113'], extra_args = ['128', '985']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...111110101014'] == ['1113']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110101014' != '1113'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '128', '985']
+________________________________ test_add_s_1 _________________________________
+
+    def test_add_s_1():
+        args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+        ground = ['167517149270729074931492711856953734']
+>       check_cmd_output(ground, args)
+
+test_student.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['167517149270729074931492711856953734']
+extra_args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...781412161215'] == ['167517149270...711856953734']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111017614101610158136116138116158121015813610101941781412161215' != '167517149270729074931492711856953734'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '83758574635364537465746355928476867', '83758574635364537465746355928476867']
+________________________________ test_add_s_2 _________________________________
+
+    def test_add_s_2():
+        args = ['0', '0']
+        ground = ['0']
+>       check_cmd_output(ground, args)
+
+test_student.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['0'], extra_args = ['0', '0']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...111111111111'] == ['0']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111' != '0'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '0', '0']
+________________________________ test_add_s_3 _________________________________
+
+    def test_add_s_3():
+        args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348',
+                '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+        ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+>       check_cmd_output(ground, args)
+
+test_student.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+extra_args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...712149671218'] == ['116285421323...819583485837']
+E         At index 0 diff: '111111111111110125111714131110121112141271111121271112111071213536712127111068119512131215118119671317151068119671317151181196713171511711106712149671218' != '11628542132351822318231983242583181959186343609185848595918584860918584860819583485837'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+===================== 4 failed, 1 passed in 0.96 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\assignment56 (1), inifile:
+plugins: timeout-1.2.0
+timeout: 100.0s method: thread
+collected 5 items
+
+test_student.py .FFFF
+
+================================== FAILURES ===================================
+________________________________ test_add_s_0 _________________________________
+
+    def test_add_s_0():
+        args = ['128', '985']
+        ground = ['1113']
+>       check_cmd_output(ground, args)
+
+test_student.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['1113'], extra_args = ['128', '985']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...111110101014'] == ['1113']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110101014' != '1113'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '128', '985']
+________________________________ test_add_s_1 _________________________________
+
+    def test_add_s_1():
+        args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+        ground = ['167517149270729074931492711856953734']
+>       check_cmd_output(ground, args)
+
+test_student.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['167517149270729074931492711856953734']
+extra_args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...781412161215'] == ['167517149270...711856953734']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111017614101610158136116138116158121015813610101941781412161215' != '167517149270729074931492711856953734'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '83758574635364537465746355928476867', '83758574635364537465746355928476867']
+________________________________ test_add_s_2 _________________________________
+
+    def test_add_s_2():
+        args = ['0', '0']
+        ground = ['0']
+>       check_cmd_output(ground, args)
+
+test_student.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['0'], extra_args = ['0', '0']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...111111111111'] == ['0']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111' != '0'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '0', '0']
+________________________________ test_add_s_3 _________________________________
+
+    def test_add_s_3():
+        args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348',
+                '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+        ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+>       check_cmd_output(ground, args)
+
+test_student.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+extra_args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...712149671218'] == ['116285421323...819583485837']
+E         At index 0 diff: '111111111111110125111714131110121112141271111121271112111071213536712127111068119512131215118119671317151068119671317151181196713171511711106712149671218' != '11628542132351822318231983242583181959186343609185848595918584860918584860819583485837'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+===================== 4 failed, 1 passed in 0.79 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\assignment56 (1), inifile:
+plugins: timeout-1.2.0
+timeout: 100.0s method: thread
+collected 5 items
+
+test_student.py .FFFF
+
+================================== FAILURES ===================================
+________________________________ test_add_s_0 _________________________________
+
+    def test_add_s_0():
+        args = ['128', '985']
+        ground = ['1113']
+>       check_cmd_output(ground, args)
+
+test_student.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['1113'], extra_args = ['128', '985']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...111110101014'] == ['1113']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110101014' != '1113'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '128', '985']
+________________________________ test_add_s_1 _________________________________
+
+    def test_add_s_1():
+        args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+        ground = ['167517149270729074931492711856953734']
+>       check_cmd_output(ground, args)
+
+test_student.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['167517149270729074931492711856953734']
+extra_args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...781412161215'] == ['167517149270...711856953734']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111017614101610158136116138116158121015813610101941781412161215' != '167517149270729074931492711856953734'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '83758574635364537465746355928476867', '83758574635364537465746355928476867']
+________________________________ test_add_s_2 _________________________________
+
+    def test_add_s_2():
+        args = ['0', '0']
+        ground = ['0']
+>       check_cmd_output(ground, args)
+
+test_student.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['0'], extra_args = ['0', '0']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...111111111111'] == ['0']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111' != '0'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '0', '0']
+________________________________ test_add_s_3 _________________________________
+
+    def test_add_s_3():
+        args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348',
+                '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+        ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+>       check_cmd_output(ground, args)
+
+test_student.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+extra_args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...712149671218'] == ['116285421323...819583485837']
+E         At index 0 diff: '111111111111110125111714131110121112141271111121271112111071213536712127111068119512131215118119671317151068119671317151181196713171511711106712149671218' != '11628542132351822318231983242583181959186343609185848595918584860918584860819583485837'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+===================== 4 failed, 1 passed in 0.78 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\assignment56 (1), inifile:
+plugins: timeout-1.2.0
+timeout: 100.0s method: thread
+collected 5 items
+
+test_student.py .FFFF
+
+================================== FAILURES ===================================
+________________________________ test_add_s_0 _________________________________
+
+    def test_add_s_0():
+        args = ['128', '985']
+        ground = ['1113']
+>       check_cmd_output(ground, args)
+
+test_student.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['1113'], extra_args = ['128', '985']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...111110101014'] == ['1113']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110101014' != '1113'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '128', '985']
+________________________________ test_add_s_1 _________________________________
+
+    def test_add_s_1():
+        args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+        ground = ['167517149270729074931492711856953734']
+>       check_cmd_output(ground, args)
+
+test_student.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['167517149270729074931492711856953734']
+extra_args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...781412161215'] == ['167517149270...711856953734']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111017614101610158136116138116158121015813610101941781412161215' != '167517149270729074931492711856953734'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '83758574635364537465746355928476867', '83758574635364537465746355928476867']
+________________________________ test_add_s_2 _________________________________
+
+    def test_add_s_2():
+        args = ['0', '0']
+        ground = ['0']
+>       check_cmd_output(ground, args)
+
+test_student.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['0'], extra_args = ['0', '0']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...111111111111'] == ['0']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111' != '0'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '0', '0']
+________________________________ test_add_s_3 _________________________________
+
+    def test_add_s_3():
+        args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348',
+                '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+        ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+>       check_cmd_output(ground, args)
+
+test_student.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+extra_args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...712149671218'] == ['116285421323...819583485837']
+E         At index 0 diff: '111111111111110125111714131110121112141271111121271112111071213536712127111068119512131215118119671317151068119671317151181196713171511711106712149671218' != '11628542132351822318231983242583181959186343609185848595918584860918584860819583485837'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+===================== 4 failed, 1 passed in 0.78 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\assignment56 (1), inifile:
+plugins: timeout-1.2.0
+timeout: 100.0s method: thread
+collected 5 items
+
+test_student.py .FFFF
+
+================================== FAILURES ===================================
+________________________________ test_add_s_0 _________________________________
+
+    def test_add_s_0():
+        args = ['128', '985']
+        ground = ['1113']
+>       check_cmd_output(ground, args)
+
+test_student.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['1113'], extra_args = ['128', '985']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...111110101014'] == ['1113']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110101014' != '1113'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '128', '985']
+________________________________ test_add_s_1 _________________________________
+
+    def test_add_s_1():
+        args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+        ground = ['167517149270729074931492711856953734']
+>       check_cmd_output(ground, args)
+
+test_student.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['167517149270729074931492711856953734']
+extra_args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...781412161215'] == ['167517149270...711856953734']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111017614101610158136116138116158121015813610101941781412161215' != '167517149270729074931492711856953734'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '83758574635364537465746355928476867', '83758574635364537465746355928476867']
+________________________________ test_add_s_2 _________________________________
+
+    def test_add_s_2():
+        args = ['0', '0']
+        ground = ['0']
+>       check_cmd_output(ground, args)
+
+test_student.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['0'], extra_args = ['0', '0']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...111111111111'] == ['0']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111' != '0'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '0', '0']
+________________________________ test_add_s_3 _________________________________
+
+    def test_add_s_3():
+        args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348',
+                '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+        ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+>       check_cmd_output(ground, args)
+
+test_student.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+extra_args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...712149671218'] == ['116285421323...819583485837']
+E         At index 0 diff: '111111111111110125111714131110121112141271111121271112111071213536712127111068119512131215118119671317151068119671317151181196713171511711106712149671218' != '11628542132351822318231983242583181959186343609185848595918584860918584860819583485837'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+===================== 4 failed, 1 passed in 0.78 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\assignment56 (1), inifile:
+plugins: timeout-1.2.0
+timeout: 100.0s method: thread
+collected 5 items
+
+test_student.py .FFFF
+
+================================== FAILURES ===================================
+________________________________ test_add_s_0 _________________________________
+
+    def test_add_s_0():
+        args = ['128', '985']
+        ground = ['1113']
+>       check_cmd_output(ground, args)
+
+test_student.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['1113'], extra_args = ['128', '985']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...111110101014'] == ['1113']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110101014' != '1113'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '128', '985']
+________________________________ test_add_s_1 _________________________________
+
+    def test_add_s_1():
+        args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+        ground = ['167517149270729074931492711856953734']
+>       check_cmd_output(ground, args)
+
+test_student.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['167517149270729074931492711856953734']
+extra_args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...781412161215'] == ['167517149270...711856953734']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111017614101610158136116138116158121015813610101941781412161215' != '167517149270729074931492711856953734'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '83758574635364537465746355928476867', '83758574635364537465746355928476867']
+________________________________ test_add_s_2 _________________________________
+
+    def test_add_s_2():
+        args = ['0', '0']
+        ground = ['0']
+>       check_cmd_output(ground, args)
+
+test_student.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['0'], extra_args = ['0', '0']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...111111111111'] == ['0']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111' != '0'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '0', '0']
+________________________________ test_add_s_3 _________________________________
+
+    def test_add_s_3():
+        args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348',
+                '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+        ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+>       check_cmd_output(ground, args)
+
+test_student.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+extra_args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...712149671218'] == ['116285421323...819583485837']
+E         At index 0 diff: '111111111111110125111714131110121112141271111121271112111071213536712127111068119512131215118119671317151068119671317151181196713171511711106712149671218' != '11628542132351822318231983242583181959186343609185848595918584860918584860819583485837'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+===================== 4 failed, 1 passed in 0.79 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\assignment56 (1), inifile:
+plugins: timeout-1.2.0
+timeout: 100.0s method: thread
+collected 5 items
+
+test_student.py .FFFF
+
+================================== FAILURES ===================================
+________________________________ test_add_s_0 _________________________________
+
+    def test_add_s_0():
+        args = ['128', '985']
+        ground = ['1113']
+>       check_cmd_output(ground, args)
+
+test_student.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['1113'], extra_args = ['128', '985']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...111110101014'] == ['1113']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110101014' != '1113'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '128', '985']
+________________________________ test_add_s_1 _________________________________
+
+    def test_add_s_1():
+        args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+        ground = ['167517149270729074931492711856953734']
+>       check_cmd_output(ground, args)
+
+test_student.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['167517149270729074931492711856953734']
+extra_args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...781412161215'] == ['167517149270...711856953734']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111017614101610158136116138116158121015813610101941781412161215' != '167517149270729074931492711856953734'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '83758574635364537465746355928476867', '83758574635364537465746355928476867']
+________________________________ test_add_s_2 _________________________________
+
+    def test_add_s_2():
+        args = ['0', '0']
+        ground = ['0']
+>       check_cmd_output(ground, args)
+
+test_student.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['0'], extra_args = ['0', '0']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...111111111111'] == ['0']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111' != '0'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '0', '0']
+________________________________ test_add_s_3 _________________________________
+
+    def test_add_s_3():
+        args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348',
+                '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+        ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+>       check_cmd_output(ground, args)
+
+test_student.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+extra_args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...712149671218'] == ['116285421323...819583485837']
+E         At index 0 diff: '111111111111110125111714131110121112141271111121271112111071213536712127111068119512131215118119671317151068119671317151181196713171511711106712149671218' != '11628542132351822318231983242583181959186343609185848595918584860918584860819583485837'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+===================== 4 failed, 1 passed in 0.78 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\assignment56 (1), inifile:
+plugins: timeout-1.2.0
+timeout: 100.0s method: thread
+collected 5 items
+
+test_student.py .FFFF
+
+================================== FAILURES ===================================
+________________________________ test_add_s_0 _________________________________
+
+    def test_add_s_0():
+        args = ['128', '985']
+        ground = ['1113']
+>       check_cmd_output(ground, args)
+
+test_student.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['1113'], extra_args = ['128', '985']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...111110101014'] == ['1113']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110101014' != '1113'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '128', '985']
+________________________________ test_add_s_1 _________________________________
+
+    def test_add_s_1():
+        args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+        ground = ['167517149270729074931492711856953734']
+>       check_cmd_output(ground, args)
+
+test_student.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['167517149270729074931492711856953734']
+extra_args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...781412161215'] == ['167517149270...711856953734']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111017614101610158136116138116158121015813610101941781412161215' != '167517149270729074931492711856953734'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '83758574635364537465746355928476867', '83758574635364537465746355928476867']
+________________________________ test_add_s_2 _________________________________
+
+    def test_add_s_2():
+        args = ['0', '0']
+        ground = ['0']
+>       check_cmd_output(ground, args)
+
+test_student.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['0'], extra_args = ['0', '0']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...111111111111'] == ['0']
+E         At index 0 diff: '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111' != '0'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '0', '0']
+________________________________ test_add_s_3 _________________________________
+
+    def test_add_s_3():
+        args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348',
+                '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+        ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+>       check_cmd_output(ground, args)
+
+test_student.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+extra_args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['11111111111...712149671218'] == ['116285421323...819583485837']
+E         At index 0 diff: '111111111111110125111714131110121112141271111121271112111071213536712127111068119512131215118119671317151068119671317151181196713171511711106712149671218' != '11628542132351822318231983242583181959186343609185848595918584860918584860819583485837'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+===================== 4 failed, 1 passed in 2.33 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\assignment56 (1), inifile:
+plugins: timeout-1.2.0
+timeout: 100.0s method: thread
+collected 5 items
+
+test_student.py ..FFF
+
+================================== FAILURES ===================================
+________________________________ test_add_s_1 _________________________________
+
+    def test_add_s_1():
+        args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+        ground = ['167517149270729074931492711856953734']
+>       check_cmd_output(ground, args)
+
+test_student.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['167517149270729074931492711856953734']
+extra_args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['1113'] == ['167517149270729074931492711856953734']
+E         At index 0 diff: '1113' != '167517149270729074931492711856953734'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '83758574635364537465746355928476867', '83758574635364537465746355928476867']
+________________________________ test_add_s_2 _________________________________
+
+    def test_add_s_2():
+        args = ['0', '0']
+        ground = ['0']
+>       check_cmd_output(ground, args)
+
+test_student.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['0'], extra_args = ['0', '0']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['1113'] == ['0']
+E         At index 0 diff: '1113' != '0'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '0', '0']
+________________________________ test_add_s_3 _________________________________
+
+    def test_add_s_3():
+        args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348',
+                '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+        ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+>       check_cmd_output(ground, args)
+
+test_student.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+extra_args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['1113'] == ['11628542132351822318231...60918584860819583485837']
+E         At index 0 diff: '1113' != '11628542132351822318231983242583181959186343609185848595918584860918584860819583485837'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+===================== 3 failed, 2 passed in 1.03 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\assignment56 (1), inifile:
+plugins: timeout-1.2.0
+timeout: 100.0s method: thread
+collected 5 items
+
+test_student.py ..FFF
+
+================================== FAILURES ===================================
+________________________________ test_add_s_1 _________________________________
+
+    def test_add_s_1():
+        args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+        ground = ['167517149270729074931492711856953734']
+>       check_cmd_output(ground, args)
+
+test_student.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['167517149270729074931492711856953734']
+extra_args = ['83758574635364537465746355928476867', '83758574635364537465746355928476867']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['1113'] == ['167517149270729074931492711856953734']
+E         At index 0 diff: '1113' != '167517149270729074931492711856953734'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '83758574635364537465746355928476867', '83758574635364537465746355928476867']
+________________________________ test_add_s_2 _________________________________
+
+    def test_add_s_2():
+        args = ['0', '0']
+        ground = ['0']
+>       check_cmd_output(ground, args)
+
+test_student.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['0'], extra_args = ['0', '0']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['1113'] == ['0']
+E         At index 0 diff: '1113' != '0'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '0', '0']
+________________________________ test_add_s_3 _________________________________
+
+    def test_add_s_3():
+        args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348',
+                '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+        ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+>       check_cmd_output(ground, args)
+
+test_student.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ground = ['11628542132351822318231983242583181959186343609185848595918584860918584860819583485837']
+extra_args = ['9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+
+    def check_cmd_output(ground, extra_args = None):
+        args = ['./' + fn + '.out']
+        if extra_args is not None:
+            args.extend(extra_args)
+    
+        print "Running with args:", args
+    
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        # windows and it's \r issue
+        out_stripped = [i.strip() for i in out.split('\n') if i.strip() != '']
+>       assert out_stripped == ground
+E       AssertionError: assert ['1113'] == ['11628542132351822318231...60918584860819583485837']
+E         At index 0 diff: '1113' != '11628542132351822318231983242583181959186343609185848595918584860918584860819583485837'
+E         Use -v to get the full diff
+
+test_student.py:75: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Running with args: ['./a13.out', '9238958375668347483475634840234834723562394873562349872356234987356234987347234862348', '2389583756683474834756348402348347235623948735623498723562349873562349873472348623489']
+===================== 3 failed, 2 passed in 1.05 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\assignment56 (1), inifile:
+plugins: timeout-1.2.0
+timeout: 100.0s method: thread
+collected 5 items
+
+test_student.py .....
+
+========================== 5 passed in 0.94 seconds ===========================
