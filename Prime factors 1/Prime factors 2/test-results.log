@@ -1,0 +1,116 @@
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\Assignment_6, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 5 items
+
+test_student.py ...FF
+
+================================== FAILURES ===================================
+____________________________ test_get_nth_prime_1 _____________________________
+
+    def test_get_nth_prime_1():
+>       out = get_nth_prime(2.1)
+
+test_student.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+y = 2.1
+
+    def get_nth_prime(y):
+        if y > 1:
+>           for i in range(2, y):
+E           TypeError: range() integer end argument expected, got float.
+
+a06.py:24: TypeError
+____________________________ test_get_nth_prime_3 _____________________________
+
+    def test_get_nth_prime_3():
+        out = get_nth_prime(29)
+>       assert out == 109
+E       assert True == 109
+
+test_student.py:33: AssertionError
+===================== 2 failed, 3 passed in 0.22 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\Assignment_6, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 5 items
+
+test_student.py ...FF
+
+================================== FAILURES ===================================
+____________________________ test_get_nth_prime_1 _____________________________
+
+    def test_get_nth_prime_1():
+>       out = get_nth_prime(2.1)
+
+test_student.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+y = 2.1
+
+    def get_nth_prime(y):
+        if y > 1:
+>           for i in range(2, y):
+E           TypeError: range() integer end argument expected, got float.
+
+a06.py:24: TypeError
+____________________________ test_get_nth_prime_3 _____________________________
+
+    def test_get_nth_prime_3():
+        out = get_nth_prime(29)
+>       assert out == 109
+E       assert True == 109
+
+test_student.py:33: AssertionError
+===================== 2 failed, 3 passed in 0.08 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\Assignment_6, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 5 items
+
+test_student.py .FF.F
+
+================================== FAILURES ===================================
+_________________________ test_output_prime_factors_2 _________________________
+
+    def test_output_prime_factors_2():
+        v, out = capture_output(output_prime_factors)(230)
+>       assert out == '\n'.join([str(x) for x in [2, 5, 23]]) + "\n"
+E       AssertionError: assert '5\n23\n115\n' == '2\n5\n23\n'
+E         + 2
+E           5
+E           23
+E         - 115
+
+test_student.py:15: AssertionError
+_________________________ test_output_prime_factors_3 _________________________
+
+    def test_output_prime_factors_3():
+        v, out = capture_output(output_prime_factors)(230.6)
+>       assert out == '\n'.join([str(x) for x in [3, 7, 11]]) + "\n"
+E       AssertionError: assert '3\n7\n11\n21\n33\n77\n231\n' == '3\n7\n11\n'
+E           3
+E           7
+E           11
+E         - 21
+E         - 33
+E         - 77
+E         - 231
+
+test_student.py:20: AssertionError
+____________________________ test_get_nth_prime_3 _____________________________
+
+    def test_get_nth_prime_3():
+        out = get_nth_prime(29)
+>       assert out == 109
+E       assert 59 == 109
+
+test_student.py:33: AssertionError
+===================== 3 failed, 2 passed in 2.67 seconds ======================
