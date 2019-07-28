@@ -1,0 +1,276 @@
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\MUBARIZ a05, inifile:
+plugins: timeout-1.2.0
+timeout: 5.0s method: thread
+collected 10 items
+
+test_student.py FFFFFFFFFF
+
+================================== FAILURES ===================================
+_______________________________ test_isprime_1 ________________________________
+
+    def test_isprime_1():
+        for i in [5, 139, 631, 919]:
+>           assert is_prime(i) == True
+E           NameError: global name 'is_prime' is not defined
+
+test_student.py:10: NameError
+_____________________________ test_isprime_float ______________________________
+
+    def test_isprime_float():
+>       assert is_prime(6.0) == False
+E       NameError: global name 'is_prime' is not defined
+
+test_student.py:13: NameError
+____________________________ test_isprime_float_2 _____________________________
+
+    def test_isprime_float_2():
+>       assert is_prime(6.09) == False
+E       NameError: global name 'is_prime' is not defined
+
+test_student.py:16: NameError
+______________________________ test_get_prime_1 _______________________________
+
+    def test_get_prime_1():
+>       assert get_largest_prime(7920) == 7919
+E       NameError: global name 'get_largest_prime' is not defined
+
+test_student.py:22: NameError
+______________________________ test_get_prime_2 _______________________________
+
+    def test_get_prime_2():
+>       assert get_largest_prime(87) == 83
+E       NameError: global name 'get_largest_prime' is not defined
+
+test_student.py:26: NameError
+______________________________ test_get_prime_3 _______________________________
+
+    def test_get_prime_3():
+>       assert get_largest_prime(87.9) == 83
+E       NameError: global name 'get_largest_prime' is not defined
+
+test_student.py:29: NameError
+______________________________ test_get_prime_4 _______________________________
+
+    def test_get_prime_4():
+>       assert get_largest_prime(0) == None
+E       NameError: global name 'get_largest_prime' is not defined
+
+test_student.py:33: NameError
+______________________________ test_get_prime_5 _______________________________
+
+    def test_get_prime_5():
+>       assert get_largest_prime(7) == 7
+E       NameError: global name 'get_largest_prime' is not defined
+
+test_student.py:37: NameError
+____________________________ test_output_factors_1 ____________________________
+
+    def test_output_factors_1():
+>       v, out = capture_output(output_factors)(10)
+E       NameError: global name 'output_factors' is not defined
+
+test_student.py:43: NameError
+____________________________ test_output_factors_2 ____________________________
+
+    def test_output_factors_2():
+>       v, out = capture_output(output_factors)(99)
+E       NameError: global name 'output_factors' is not defined
+
+test_student.py:47: NameError
+========================== 10 failed in 0.54 seconds ==========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\MUBARIZ a05, inifile:
+plugins: timeout-1.2.0
+timeout: 5.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+E:\Anaconda\DICK\lib\site-packages\_pytest\python.py:418: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+E:\Anaconda\DICK\lib\site-packages\py\_path\local.py:662: in pyimport
+    __import__(modname)
+E:\Anaconda\DICK\lib\site-packages\_pytest\assertion\rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a05 import is_prime, get_largest_prime, output_factors
+E     File "C:\Users\Mubariz Khan\Downloads\MUBARIZ a05\a05.py", line 20
+E       if __name__ == '__main__':
+E        ^
+E   IndentationError: expected an indented block
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.31 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\MUBARIZ a05, inifile:
+plugins: timeout-1.2.0
+timeout: 5.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+E:\Anaconda\DICK\lib\site-packages\_pytest\python.py:418: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+E:\Anaconda\DICK\lib\site-packages\py\_path\local.py:662: in pyimport
+    __import__(modname)
+E:\Anaconda\DICK\lib\site-packages\_pytest\assertion\rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a05 import is_prime, get_largest_prime, output_factors
+E     File "C:\Users\Mubariz Khan\Downloads\MUBARIZ a05\a05.py", line 20
+E       if __name__ == '__main__':
+E        ^
+E   IndentationError: expected an indented block
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.38 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\MUBARIZ a05, inifile:
+plugins: timeout-1.2.0
+timeout: 5.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+E:\Anaconda\DICK\lib\site-packages\_pytest\python.py:418: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+E:\Anaconda\DICK\lib\site-packages\py\_path\local.py:662: in pyimport
+    __import__(modname)
+E:\Anaconda\DICK\lib\site-packages\_pytest\assertion\rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a05 import is_prime, get_largest_prime, output_factors
+E     File "C:\Users\Mubariz Khan\Downloads\MUBARIZ a05\a05.py", line 6
+E       def is_prime():
+E      ^
+E   IndentationError: unexpected indent
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.34 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\MUBARIZ a05, inifile:
+plugins: timeout-1.2.0
+timeout: 5.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+E:\Anaconda\DICK\lib\site-packages\_pytest\python.py:418: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+E:\Anaconda\DICK\lib\site-packages\py\_path\local.py:662: in pyimport
+    __import__(modname)
+E:\Anaconda\DICK\lib\site-packages\_pytest\assertion\rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a05 import is_prime, get_largest_prime, output_factors
+E     File "C:\Users\Mubariz Khan\Downloads\MUBARIZ a05\a05.py", line 6
+E       def is_prime():
+E      ^
+E   IndentationError: unexpected indent
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.33 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\MUBARIZ a05, inifile:
+plugins: timeout-1.2.0
+timeout: 5.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+E:\Anaconda\DICK\lib\site-packages\_pytest\python.py:418: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+E:\Anaconda\DICK\lib\site-packages\py\_path\local.py:662: in pyimport
+    __import__(modname)
+E:\Anaconda\DICK\lib\site-packages\_pytest\assertion\rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a05 import is_prime, get_largest_prime, output_factors
+E     File "C:\Users\Mubariz Khan\Downloads\MUBARIZ a05\a05.py", line 7
+E       def is_prime():
+E      ^
+E   IndentationError: unexpected indent
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.29 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\MUBARIZ a05, inifile:
+plugins: timeout-1.2.0
+timeout: 5.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+E:\Anaconda\DICK\lib\site-packages\_pytest\python.py:418: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+E:\Anaconda\DICK\lib\site-packages\py\_path\local.py:662: in pyimport
+    __import__(modname)
+E:\Anaconda\DICK\lib\site-packages\_pytest\assertion\rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a05 import is_prime, get_largest_prime, output_factors
+E     File "C:\Users\Mubariz Khan\Downloads\MUBARIZ a05\a05.py", line 7
+E       def is_prime(D):
+E      ^
+E   IndentationError: unexpected indent
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.84 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\MUBARIZ a05, inifile:
+plugins: timeout-1.2.0
+timeout: 5.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+E:\Anaconda\DICK\lib\site-packages\_pytest\python.py:418: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+E:\Anaconda\DICK\lib\site-packages\py\_path\local.py:662: in pyimport
+    __import__(modname)
+E:\Anaconda\DICK\lib\site-packages\_pytest\assertion\rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a05 import is_prime, get_largest_prime, output_factors
+E     File "C:\Users\Mubariz Khan\Downloads\MUBARIZ a05\a05.py", line 7
+E       def is_prime(n):
+E      ^
+E   IndentationError: unexpected indent
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.19 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\MUBARIZ a05, inifile:
+plugins: timeout-1.2.0
+timeout: 5.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+E:\Anaconda\DICK\lib\site-packages\_pytest\python.py:418: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+E:\Anaconda\DICK\lib\site-packages\py\_path\local.py:662: in pyimport
+    __import__(modname)
+E:\Anaconda\DICK\lib\site-packages\_pytest\assertion\rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a05 import is_prime, get_largest_prime, output_factors
+E     File "C:\Users\Mubariz Khan\Downloads\MUBARIZ a05\a05.py", line 7
+E       def is_prime(n):
+E      ^
+E   IndentationError: unexpected indent
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.24 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\MUBARIZ a05, inifile:
+plugins: timeout-1.2.0
+timeout: 5.0s method: thread
+collected 10 items
+
+test_student.py ..........
+
+========================== 10 passed in 0.20 seconds ==========================
