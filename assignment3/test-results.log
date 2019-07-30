@@ -1,0 +1,220 @@
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\XXXX\assignment3, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+E:\Anaconda\DICK\lib\site-packages\_pytest\python.py:418: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+E:\Anaconda\DICK\lib\site-packages\py\_path\local.py:662: in pyimport
+    __import__(modname)
+E:\Anaconda\DICK\lib\site-packages\_pytest\assertion\rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+test_student.py:1: in <module>
+    from a01 import code_holder
+E     File "C:\Users\Mubariz Khan\Downloads\XXXX\assignment3\a01.py", line 6
+E       v = num1 + num2
+E      ^
+E   IndentationError: unexpected indent
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.30 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\XXXX\assignment3, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+E:\Anaconda\DICK\lib\site-packages\_pytest\python.py:418: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+E:\Anaconda\DICK\lib\site-packages\py\_path\local.py:662: in pyimport
+    __import__(modname)
+E:\Anaconda\DICK\lib\site-packages\_pytest\assertion\rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+test_student.py:1: in <module>
+    from a01 import code_holder
+E     File "C:\Users\Mubariz Khan\Downloads\XXXX\assignment3\a01.py", line 6
+E       v = num1 + num2
+E      ^
+E   IndentationError: unexpected indent
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.23 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\XXXX\assignment3, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+E:\Anaconda\DICK\lib\site-packages\_pytest\python.py:418: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+E:\Anaconda\DICK\lib\site-packages\py\_path\local.py:662: in pyimport
+    __import__(modname)
+E:\Anaconda\DICK\lib\site-packages\_pytest\assertion\rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+test_student.py:1: in <module>
+    from a01 import code_holder
+E     File "C:\Users\Mubariz Khan\Downloads\XXXX\assignment3\a01.py", line 6
+E       v = num1 + num2
+E      ^
+E   IndentationError: unexpected indent
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.23 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: C:\Users\Mubariz Khan\Downloads\XXXX\assignment3, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 2 items
+
+test_student.py ..
+
+========================== 2 passed in 0.12 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: E:\ITC\Assignments\assignment3, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+ImportError while importing test module 'E:\ITC\Assignments\assignment3\test_student.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\Mubariz Khan\Downloads\XXXX\assignment3\test_student.py:1: in <module>
+    ???
+E   ImportError: cannot import name code_holder
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.33 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: E:\ITC\Assignments\assignment3, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+ImportError while importing test module 'E:\ITC\Assignments\assignment3\test_student.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\Mubariz Khan\Downloads\XXXX\assignment3\test_student.py:1: in <module>
+    ???
+E   ImportError: cannot import name code_holder
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.11 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: E:\ITC\Assignments\assignment3, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+import file mismatch:
+imported module 'assignment3.test_student' has this __file__ attribute:
+  C:\Users\Mubariz Khan\Downloads\XXXX\assignment3\test_student.py
+which is not the same as the test file we want to collect:
+  E:\ITC\Assignments\assignment3\test_student.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.10 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: E:\ITC\Assignments\assignment3, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+import file mismatch:
+imported module 'assignment3.test_student' has this __file__ attribute:
+  C:\Users\Mubariz Khan\Downloads\XXXX\assignment3\test_student.py
+which is not the same as the test file we want to collect:
+  E:\ITC\Assignments\assignment3\test_student.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.11 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: E:\ITC\Assignments\assignment3, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+import file mismatch:
+imported module 'assignment3.test_student' has this __file__ attribute:
+  C:\Users\Mubariz Khan\Downloads\XXXX\assignment3\test_student.py
+which is not the same as the test file we want to collect:
+  E:\ITC\Assignments\assignment3\test_student.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.11 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: E:\ITC\Assignments\assignment3, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+E:\Anaconda\DICK\lib\site-packages\_pytest\python.py:418: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+E:\Anaconda\DICK\lib\site-packages\py\_path\local.py:662: in pyimport
+    __import__(modname)
+E:\Anaconda\DICK\lib\site-packages\_pytest\assertion\rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+C:\Users\Mubariz Khan\Downloads\XXXX\assignment3\test_student.py:1: in <module>
+    ???
+E     File "E:\ITC\Assignments\assignment3\a01.py", line 8
+E       return v
+E   SyntaxError: 'return' outside function
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.19 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: E:\ITC\Assignments\assignment3, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+import file mismatch:
+imported module 'assignment3.test_student' has this __file__ attribute:
+  C:\Users\Mubariz Khan\Downloads\XXXX\assignment3\test_student.py
+which is not the same as the test file we want to collect:
+  E:\ITC\Assignments\assignment3\test_student.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.10 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 2.7.13, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+rootdir: E:\ITC\Assignments\assignment3, inifile:
+plugins: timeout-1.2.0
+timeout: 3.0s method: thread
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+import file mismatch:
+imported module 'assignment3.test_student' has this __file__ attribute:
+  C:\Users\Mubariz Khan\Downloads\XXXX\assignment3\test_student.py
+which is not the same as the test file we want to collect:
+  E:\ITC\Assignments\assignment3\test_student.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.10 seconds ===========================
